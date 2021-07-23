@@ -1,0 +1,195 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+
+.main-columns {
+  display: flex;
+
+  background-color: DodgerBlue;
+  /* align-items:stretch; */
+  /* align-content:stretch; */
+  height: 100%;
+}
+
+.main-container > div {
+  background-color: #f1f1f1;
+  width: 100%;
+
+  /* margin will adjust the visible parent container background (the blue in this case) 
+  
+  So we will want to adjust block 1, 2, 3 margins separately to get the middle border only to be visible
+  */
+  /* margin: 0px; */
+
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.left-column {
+  margin-right: 3px;
+  flex: 1;
+}
+
+.middle-column {
+  margin-right: 3px;
+  flex: 1;
+}
+.right-column {
+  flex: 1;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  /* align-items:stretch; */
+  /* align-content:stretch; */
+  height: 100%;
+}
+
+.left-column > div {
+  background-color: #f1f1f1;
+  /* width: 100%; */
+  height: 100%;
+
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.top-blank {
+  flex: 1;
+}
+.top {
+  text-align: bottom;
+  margin: 3px;
+  flex: 1;
+  text-decoration: underline;
+}
+
+.middle {
+  margin: 3px;
+  flex: 1.5;
+}
+.bottom {
+  margin: 3px;
+  flex: 1.5;
+}
+
+/* middle column  */
+
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  /* align-items:stretch; */
+  /* align-content:stretch; */
+  height: 100%;
+}
+
+.middle-column > div {
+  background-color: #f1f1f1;
+  /* width: 100%; */
+  height: 100%;
+
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.top {
+  text-align: bottom;
+  margin: 3px;
+  flex: 1;
+  text-decoration: underline;
+}
+
+.middle {
+  margin: 3px;
+  flex: 0.5;
+}
+.bottom {
+  margin: 3px;
+  flex: 1.5;
+}
+
+/* right column  */
+
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  /* align-items:stretch; */
+  /* align-content:stretch; */
+  height: 100%;
+}
+
+.right-column > div {
+  background-color: #f1f1f1;
+  /* width: 100%; */
+  height: 100%;
+
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.top {
+  text-align: bottom;
+  margin: 3px;
+  flex: .75;
+  text-decoration: underline;
+}
+
+.middle {
+  margin: 3px;
+  flex: 0.5;
+}
+.middle-2 {
+  margin: 3px;
+  flex: 2;
+}
+.bottom {
+  margin: 3px;
+  flex: 2.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
