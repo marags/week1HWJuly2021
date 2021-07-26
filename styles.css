@@ -1,195 +1,231 @@
+html, body {
+    height: 97%;
+    width: 97%;
+    font-family: sans-serif;
+}
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  
+/* Brochure wrapper  */
+.brochure {
+    display: flex;
+    height: 100%;
+    width: 100%; 
+    margin: 1%;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+}
+.brochure > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/****-- Column Containers --****/
+.left {
+    flex-basis: 32%;
+    text-align: center;
+}
+.middle {
+    flex-basis: 32%;
+    margin: 1px solid#36454F;
+}
+.right {
+    flex-basis: 32%;
+    text-align: center;
+}
+.fold {
+    flex-basis: 2%;
+    background-color: #414a4c;
+}
+
+/****-- LEFT Items --****/
+/* NOTE: left-top, left-middle-3 and left-bottom are used for 
+ formating the column spacing */
+
+.left-top {
+    flex-basis: 15%;
+}
+.left-middle-1 {
+    flex-basis: 10%;
+    font-size: 3.75vw;
+    line-height: 0.4;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+.left-middle-2 {
+    flex-basis: 30%;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+}
+.left-middle-2 > a {
+    object-fit: contain;
+    text-decoration: none;
+    font-size: 4vh; 
+}
+#facebook {
+    color: #B22234;
+    text-shadow: 2px 2px 5px #B22234;
+}
+#instagram {
+    color: white;
+    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 5px #EE82EE;
+}
+#twitter {
+    color: #3C3B6E;
+    text-shadow: 2px 2px 5px #3C3B6E;
+}
+.left-middle-3 {
+    flex-basis: 8%;
+}
+.left-middle-4 {
+    flex-basis: 27%;
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+}
+#social-media {
+    object-fit: contain;
+    width: 75%;
+}
+.left-bottom {
+    flex-basis: 10%;
 }
 
 
-.main-columns {
-  display: flex;
-
-  background-color: DodgerBlue;
-  /* align-items:stretch; */
-  /* align-content:stretch; */
-  height: 100%;
+/****-- MIDDLE Items --****/
+/*NOTE: middle-top, middle-middle-2, 4, 6, 8, .middle-bottom
+ are used for formatting the column space */
+.middle-top {
+    flex-basis: 5%;
+}
+.middle-middle-1 {
+    flex-basis: 26%;
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+}
+#flag {
+    object-fit: contain;
+    width: 90%;
 }
 
-.main-container > div {
-  background-color: #f1f1f1;
-  width: 100%;
-
-  /* margin will adjust the visible parent container background (the blue in this case) 
-  
-  So we will want to adjust block 1, 2, 3 margins separately to get the middle border only to be visible
-  */
-  /* margin: 0px; */
-
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.middle-middle-2 {
+    flex-basis: 15%;
+    font-size: 5.5vh;
+    text-decoration: underline;
+    text-align: center;
+    justify-content: center;
+}
+.middle-middle-3 {
+    flex-basis: 39%;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    text-indent: 5%;
+    letter-spacing: .4rem;
+    line-height: 0.7;
+    font-size: 2vh; 
+}
+#phone-number {
+    flex-basis: 30%;
+    color: #B22234;
+    text-shadow: 2px 2px 5px #B22234;
+}
+#email {
+    flex-basis: 30%;
+    color: white;
+    text-shadow: 2px 2px 5px #EE82EE;
+}
+#address {
+    flex-basis: 40%;
+    color: #3C3B6E;
+    text-shadow: 2px 2px 5px #3C3B6E;
 }
 
-.left-column {
-  margin-right: 3px;
-  flex: 1;
+.middle-bottom {
+    flex-basis: 15%;
 }
 
-.middle-column {
-  margin-right: 3px;
-  flex: 1;
+
+
+
+
+
+/****-- RIGHT Items --****/
+
+.right-top {
+    flex-basis: 5%;
 }
-.right-column {
-  flex: 1;
+.right-middle-1 {
+    flex-basis: 20%;
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
 }
-.left-column {
-  display: flex;
-  flex-direction: column;
-  background-color: DodgerBlue;
-  /* align-items:stretch; */
-  /* align-content:stretch; */
-  height: 100%;
+#ViT {
+    object-fit: contain;
+    width: 45%;
 }
 
-.left-column > div {
-  background-color: #f1f1f1;
-  /* width: 100%; */
-  height: 100%;
-
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.right-middle-2 {
+    flex-basis: 6%;
+    font-size: 3.90vw;
+    font-weight: bolder; 
 }
-
-.top-blank {
-  flex: 1;
+.bar {
+    flex-basis: 1.5%;
+    background-color: blue;
+    margin: 0 5%;
+    padding: .5% 
 }
 .top {
-  text-align: bottom;
-  margin: 3px;
-  flex: 1;
-  text-decoration: underline;
-}
-
-.middle {
-  margin: 3px;
-  flex: 1.5;
+    background-color: red;
 }
 .bottom {
-  margin: 3px;
-  flex: 1.5;
+    background-color: blue;
 }
 
-/* middle column  */
-
-.middle-column {
-  display: flex;
-  flex-direction: column;
-  background-color: DodgerBlue;
-  /* align-items:stretch; */
-  /* align-content:stretch; */
-  height: 100%;
+.right-middle-blank {
+    flex-basis: 3%;
+}
+.right-middle-3, .right-middle-4 {
+    flex-basis: 6%;
+    color: black;
+    text-align: center;
+    line-height: 0.5;
+    text-indent: 5%;
+    letter-spacing: .3rem;
+    font-size: 2vh; 
+}
+.right-middle-5 {
+    flex-basis: 8%;
+    display: flex;
+    min-width: 0;
+}
+#media-player {
+    object-fit: contain;
+    width: 75%;
+}
+.right-middle-6 {
+    flex-basis: 29%;
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.right-middle-5, .right-middle-6{
+    justify-content: center;
+    align-items: center;
 }
 
-.middle-column > div {
-  background-color: #f1f1f1;
-  /* width: 100%; */
-  height: 100%;
-
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+#photos {
+    object-fit: contain;
+    width: 80%;
 }
-
-
-.top {
-  text-align: bottom;
-  margin: 3px;
-  flex: 1;
-  text-decoration: underline;
+.right-bottom {
+    flex-basis: 10%;
 }
-
-.middle {
-  margin: 3px;
-  flex: 0.5;
-}
-.bottom {
-  margin: 3px;
-  flex: 1.5;
-}
-
-/* right column  */
-
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  background-color: DodgerBlue;
-  /* align-items:stretch; */
-  /* align-content:stretch; */
-  height: 100%;
-}
-
-.right-column > div {
-  background-color: #f1f1f1;
-  /* width: 100%; */
-  height: 100%;
-
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-
-.top {
-  text-align: bottom;
-  margin: 3px;
-  flex: .75;
-  text-decoration: underline;
-}
-
-.middle {
-  margin: 3px;
-  flex: 0.5;
-}
-.middle-2 {
-  margin: 3px;
-  flex: 2;
-}
-.bottom {
-  margin: 3px;
-  flex: 2.5;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
