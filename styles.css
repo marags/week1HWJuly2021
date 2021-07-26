@@ -162,22 +162,15 @@ html, body {
     width: 45%;
 }
 .right-middle-2 {
-    flex-basis: 6%;
+    flex-basis: 9%;
     font-size: 3.90vw;
     font-weight: bolder; 
+    border-top: red solid .3em;
+    border-bottom: blue solid .3em;
+    border-left: #f1f1f1 solid .3em;
+    border-right: #f1f1f1 solid .3em;
 }
-.bar {
-    flex-basis: 1.5%;
-    background-color: blue;
-    margin: 0 5%;
-    padding: .5% 
-}
-.top {
-    background-color: red;
-}
-.bottom {
-    background-color: blue;
-}
+
 .right-middle-blank {
     flex-basis: 3%;
 }
